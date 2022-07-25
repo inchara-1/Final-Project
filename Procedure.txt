@@ -1,0 +1,39 @@
+I.  Jupyter Notebook installation:
+Steps -
+1. Open command prompt in Windows.
+2. Type "pip3 install python" if Python is not already installed. The latest version of Python will be installed.
+3. To check if python is installed successfully, type "python -version".
+4. Now type "pip3 install jupyter" to install Jupyter Notebook.
+5. After the required packages are installed successfully, open Jupyter Notebook using "jupyter notebook" command.
+
+II.  Dataset preparation:
+Steps -
+1. Check if external or inbuilt camera is working properly.
+2. Open "dataset.ipynb" program file in Jupyter Notebook.
+3. Edit the path name based on the new image data to be prepared or created.
+4. Run the program by either clicking "Run" or "Shift+Enter".
+5. Once the new window opens, click "c" to capture images.
+6. Follow same steps to create as many image data as needed to prepare the dataset.
+
+III.  Image pre-processing:
+Steps -
+1. Open "preprocess.ipynb" program file in Jupyter Notebook.
+2. Edit the path name based on the new image data to be pre-processed.
+3. Run the program by either clicking "Run" or "Shift+Enter".
+4. Once the code is run successfully, all the images in given path will be preprocessed.
+
+IV.  Training and testing the model
+Steps -
+1. Open "train_test.ipynb" program file in Jupyter Notebook.
+2. Run the program by either clicking "Run" or "Shift+Enter".
+3. Once run is complete, CNN model is created and trained. Save the model as "CNN_model.h5".
+4. Load the model to test it with test dataset. Run the code to complete testing phase and check the accuracy to make any modifications based on it if required.
+
+V.  Real-time prediction:
+Steps -
+1. Open "prediction.ipynb" program file in Jupyter Notebook.
+2. Run the program by either clicking "Run" or "Shift+Enter".
+3. On successful run, new window appears. Select the mode based on requirement.
+4. If Sign to Text/Speech mode is selected, show the signs infront of the camera and click "c" to get the output. The respective textual output will be displayed on the right side of the window. To get the speech output, click "s".
+To close this window, click "q".
+5. If Text/Speech to Sign mode is selected, enter the textual input in the given text area and click "Submit". The respective sign(s) will appear on the screen. To provide speech input, click "Speak" and speak out the word(s) to the microphone. Then the equivalent sign(s) will appear on screen.
